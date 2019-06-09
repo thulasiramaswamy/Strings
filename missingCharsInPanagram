@@ -1,4 +1,5 @@
 // Time Complexity : O(n)
+// Lowercase and Uppercase are considered the same
 
 #include<iostream> 
 using namespace std; 
