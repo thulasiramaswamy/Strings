@@ -26,10 +26,10 @@ int main()
  long digit;
  while (*str)
  {
-	 t = *str;
-	 str++;
-	 digit = strtol(str, &str, 10);
-	 expandAndPrint(t, digit);
+ t = *str;
+ str++;
+ digit = strtol(str, &str, 10);
+ expandAndPrint(t, digit);
  }
  getchar();
  return 0;
