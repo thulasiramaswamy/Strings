@@ -11,24 +11,26 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
-void expandAndPrint(char x, int Cnt)
+void expandAndPrint(char x, long Cnt)
 {
  int i;
  for (i = 0; i < Cnt; i++)
-  printf("%c", x);
+	printf("%c", x);
 }
 int main()
 {
- char* str = "A11B4C5E6";// "A33B44C555E6780";
+ char* str = "A11B4C5E6";
  char t;
- int digit;
+ long digit;
  while (*str)
  {
- t = *str;
- str++;
- digit = strtol(str, &str, 10);
- expandAndPrint(t, digit);
+	 t = *str;
+	 str++;
+	 digit = strtol(str, &str, 10);
+	 expandAndPrint(t, digit);
  }
+ getchar();
  return 0;
 }
